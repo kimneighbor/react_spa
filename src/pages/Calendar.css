@@ -1,0 +1,78 @@
+.calendar {
+    background-color: #1e1e3f;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.calendar-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.calendar-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.calendar-month {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.prev-month,
+.next-month {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev-month:hover,
+.next-month:hover {
+    color: #ff8f40;
+}
+
+.calendar-weekdays {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar-weekday {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+.calendar-days {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.calendar-day {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.selected {
+    background-color: #ff8f40;
+    color: #fff;
+    border-radius: 50%;
+}
